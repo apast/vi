@@ -1,3 +1,7 @@
+set linebreak
+set formatoptions=1
+
+
 "" http://www.unlogic.co.uk/posts/vim-python-ide.html
 set nocompatible
 
@@ -222,8 +226,12 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
-Bundle 'git://github.com/davidhalter/jedi-vim.git'
 
+" Bundle 'git://github.com/davidhalter/jedi-vim.git'
+
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
+let g:jedi#rename_command = "<leader>r"
 
 
 
